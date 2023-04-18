@@ -25,9 +25,11 @@ for key in people:
 for row in rows:
     sum += float(row[5])
 
+need=828-sum
+
 print("We are required to get 828 service hours")
 print("We have {} hours".format(sum))
-need=828-sum
+
 if need<1:
     print("We have met our service hour requirement. Hurray!")
 else:
