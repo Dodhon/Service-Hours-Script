@@ -19,7 +19,8 @@ for row in rows:
         people[row[1]] += float(row[5])
     else:
         people[row[1]] = float(row[5])
-print(people,"\n")
+for key in people:
+    print(key, ' : ', people[key])
 
 for row in rows:
     sum += float(row[5])
