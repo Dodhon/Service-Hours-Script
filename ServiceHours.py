@@ -28,4 +28,7 @@ for row in rows:
 print("We are required to get 828 service hours")
 print("We have {} hours".format(sum))
 need=828-sum
-print("We still need {} hours".format(need))
+if need<1:
+    print("We have met our service hour requirement. Hurray!")
+else:
+    print("We still need {} hours".format(need))
