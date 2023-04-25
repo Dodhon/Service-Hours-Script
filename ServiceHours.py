@@ -19,14 +19,18 @@ for row in rows:
         people[row[1]] += float(row[5])
     else:
         people[row[1]] = float(row[5])
-for key in people:
+sorted_tuples = sorted(people.items())
+sorted_people = dict(sorted_tuples)
+for key in sorted_people:
     print(key, ' : ', people[key])
+
 
 for row in rows:
     sum += float(row[5])
 
 need=828-sum
 
+print("")
 print("We are required to get 828 service hours")
 print("We have {} hours".format(sum))
 
